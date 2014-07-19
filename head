@@ -1,0 +1,14 @@
+COUNT=10
+
+if [ "$1" == "usage" ]; then
+  echo head [n]
+  exit 0
+fi
+
+if [[ "$2" =~ ^[0-9]+$  ]]; then
+  COUNT=$2
+fi
+
+TODOTXT_SORT_COMMAND='sort -n'
+TODOTXT_FINAL_FILTER="head -$COUNT"
+todo.sh list
