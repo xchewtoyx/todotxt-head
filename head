@@ -11,4 +11,4 @@ fi
 
 TODOTXT_SORT_COMMAND='sort -n'
 TODOTXT_FINAL_FILTER="head -$COUNT"
-todo.sh list
+$TODO_FULL_SH list
